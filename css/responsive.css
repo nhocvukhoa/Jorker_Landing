@@ -1,0 +1,94 @@
+@media(max-width:991px){
+    header{
+        padding:40px 50px;
+    }
+    header .logo{
+        max-width: 80px;
+    }
+    header .toggle{
+        max-width: 40px;
+    }
+    .banner .content h2{
+        font-weight: 400;
+        font-size: 2em;
+        letter-spacing: 0.05em;
+        color:#fff;
+    }
+    .trailer video{
+        max-width: 90%;
+    }
+}
+@media(max-width:768px){
+    header{
+        padding:40px 40px;
+    }
+    .banner .content p{
+        font-size: 14px;
+    }
+    .banner  .social{
+        position: absolute;
+        top: initial;
+        right: initial;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .banner .social li{
+        margin: 0 5px;
+    }
+    .trailer video{
+        max-width: 90%;
+    }
+}
+@media(max-width:640px){
+    header{
+        padding:40px 30px;
+    }
+    header .logo{
+        max-width: 70px;
+    }
+    header .toggle{
+        max-width: 30px;
+    }
+    .banner .content h2{
+        font-weight: 400;
+        font-size: 1.5em;
+        letter-spacing: 0.05em;
+        color:#fff;
+    }
+    .trailer video{
+        max-width: 90%;
+    }
+}
+@media(max-width:580px){
+    header{
+        padding:40px 20px;
+    }
+    
+    .banner{
+        padding:170px 60px;
+    }
+    .banner .content p{
+        font-size: 14px;
+    }
+    .trailer video{
+        max-width: 90%;
+    }
+}
+@media(max-width:480px){
+    header{
+        padding:40px 10px;
+    }
+    .banner{
+        padding:170px 30px;
+    }
+    .banner .content p{
+        font-size: 13px;
+    }
+    .trailer video{
+        max-width: 90%;
+    }
+}

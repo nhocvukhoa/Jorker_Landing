@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Landing Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+
+        <header>
+            <a href="#" class="logo"><img src="./assets/logo.png" alt=""></a>
+            <div class="toggle">
+                <img src="./assets/toggle.png" alt="">
+            </div>
+        </header>
+        <div class="banner">
+            <div class="content">
+                <h2 class="title animate__animated animate__backInLeft">Put on a <span>Happy</span> face</h2>
+                <p class="introduction animate__animated animate__backInRight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                    eaque quis, sint deleniti dolore deserunt ipsum at
+                    molestias, id explicabo ab nemo corporis incidunt qui eos
+                    suscipit repudiandae voluptate et!,
+                    qui eos suscipit repudiandae voluptate et!,qui eos suscipit
+                    repudiandae voluptate et!
+                </p>
+                <a href="#" class="play animate__animated animate__backInUp" onclick="toggle();">
+                    <img src="./assets/play.png" alt="">Watch Trailer
+                </a>
+                <ul class="social animate__animated animate__backInRight">
+                    <li><a href="#"><img src="./assets/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="./assets/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="./assets/instagram.png" alt=""></a></li>
+                </ul>
+                <!-- <div class="slide"></div> -->
+            </div>
+        </div>
+        <div class="trailer">
+            <video src="./video/birdy.mp4" controls="true"></video>
+            <img src="./assets/close.png" alt="Close" onclick="toggle();" class="close">
+        </div>
+
+    </body>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        function toggle(){
+            var trailer= document.querySelector('.trailer');
+            var video= document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime=0;
+            video.pause();
+        }
+    </script>
+</html>
